@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #111;
+  color: #fff;
+  line-height: 1.6;
+}
+
+header {
+  background: #222;
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #f39c12;
+  font-size: 24px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #f39c12;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+              url('https://picsum.photos/1600/900?blur=3') no-repeat center/cover;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 40px;
+}
+
+.hero span {
+  color: #f39c12;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #f39c12;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #d35400;
+}
+
+section {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.projects .project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background: #333;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+  gap: 15px;
+}
+
+.contact input, .contact textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact button {
+  background: #f39c12;
+  color: #111;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  background: #222;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
